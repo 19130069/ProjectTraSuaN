@@ -111,5 +111,26 @@
   <ItemGroup>
     <None Include="Resources\Search-icon.png" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\Images\choco-ngucoc-kem.png" />
+    <Content Include="Resources\Images\dau_tam_kem_pho_mai.jpg" />
+    <Content Include="Resources\Images\ezgif.com-gif-maker-11.jpg" />
+    <Content Include="Resources\Images\ezgif.com-gif-maker-17.jpg" />
+    <Content Include="Resources\Images\ezgif.com-gif-maker-18.jpg" />
+    <Content Include="Resources\Images\ezgif.com-gif-maker-22.jpg" />
+    <Content Include="Resources\Images\ezgif.com-gif-maker-23.jpg" />
+    <Content Include="Resources\Images\ezgif.com-gif-maker-3.jpg" />
+    <Content Include="Resources\Images\ezgif.com-gif-maker-6.jpg" />
+    <Content Include="Resources\Images\ezgif.com-gif-maker-7.jpg" />
+    <Content Include="Resources\Images\hongtra-ngucoc-kem.png" />
+    <Content Include="Resources\Images\matcha-kem-pho-mai.png" />
+    <Content Include="Resources\Images\O-Long-xoai-kem-coffee.jpg" />
+    <Content Include="Resources\Images\sua-chua-dau-tam-hat-de-.png" />
+    <Content Include="Resources\Images\sua-chua-dau-tam-hoang-kim.png" />
+    <Content Include="Resources\Images\sua-chua-trang-.png" />
+    <Content Include="Resources\Images\Tra-dao-buoi-hong-tran-chau-baby.jpg" />
+    <Content Include="Resources\Images\tra_xanh_xoai_35d69664c31248faaf3eeade044035ba_grande.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
