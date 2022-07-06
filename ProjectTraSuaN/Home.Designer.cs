@@ -41,8 +41,11 @@
             this.txtSearch5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.tab6 = new System.Windows.Forms.TabPage();
             this.txtSearch6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tab7 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLenDon = new Guna.UI2.WinForms.Guna2Button();
@@ -57,6 +60,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.guna2TabControl1.SuspendLayout();
             this.tab1.SuspendLayout();
             this.tab2.SuspendLayout();
@@ -65,9 +77,11 @@
             this.tab5.SuspendLayout();
             this.tab6.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -79,6 +93,7 @@
             this.guna2TabControl1.Controls.Add(this.tab4);
             this.guna2TabControl1.Controls.Add(this.tab5);
             this.guna2TabControl1.Controls.Add(this.tab6);
+            this.guna2TabControl1.Controls.Add(this.tab7);
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
             this.guna2TabControl1.Location = new System.Drawing.Point(3, 0);
             this.guna2TabControl1.Name = "guna2TabControl1";
@@ -326,10 +341,21 @@
             this.txtSearch6.Size = new System.Drawing.Size(580, 26);
             this.txtSearch6.TabIndex = 2;
             // 
+            // tab7
+            // 
+            this.tab7.Location = new System.Drawing.Point(184, 4);
+            this.tab7.Name = "tab7";
+            this.tab7.Padding = new System.Windows.Forms.Padding(3);
+            this.tab7.Size = new System.Drawing.Size(592, 598);
+            this.tab7.TabIndex = 6;
+            this.tab7.Text = "Chi tiết món";
+            this.tab7.UseVisualStyleBackColor = true;
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.ItemSize = new System.Drawing.Size(200, 40);
             this.tabControl1.Location = new System.Drawing.Point(0, 2);
             this.tabControl1.Name = "tabControl1";
@@ -339,13 +365,39 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.panel1);
+            this.tabPage1.Controls.Add(this.guna2Button1);
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(869, 353);
+            this.tabPage1.Size = new System.Drawing.Size(1170, 609);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Các món đang thực hiện";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Location = new System.Drawing.Point(-4, 65);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1172, 548);
+            this.panel1.TabIndex = 14;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Lime;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(8, 6);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(143, 34);
+            this.guna2Button1.TabIndex = 13;
+            this.guna2Button1.Text = "Order Mới";
             // 
             // tabPage2
             // 
@@ -532,14 +584,128 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên Khách Hàng";
             // 
-            // Form2
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.guna2DateTimePicker1);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.guna2TextBox2);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.panel2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 44);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1170, 609);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Lịch sử đơn hàng";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(3, 60);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1164, 456);
+            this.panel2.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(881, 542);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(107, 15);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Tổng đơn hàng:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(877, 575);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(111, 15);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Tổng doanh thu:";
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.guna2TextBox2.BorderRadius = 5;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FillColor = System.Drawing.Color.Turquoise;
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.IconLeft = global::ProjectTraSuaN.Properties.Resources.Search_icon;
+            this.guna2TextBox2.Location = new System.Drawing.Point(6, 28);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2TextBox2.PlaceholderText = "Search";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(297, 26);
+            this.guna2TextBox2.TabIndex = 4;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(8, 10);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(99, 15);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Tìm đơn hàng:";
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(324, 18);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.TabIndex = 6;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2022, 7, 6, 22, 37, 33, 458);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(1014, 544);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 15);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "000000000";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(1014, 577);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(79, 15);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "000000000";
+            // 
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form2";
+            this.Name = "Home";
             this.Text = " Home";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.guna2TabControl1.ResumeLayout(false);
@@ -550,11 +716,14 @@
             this.tab5.ResumeLayout(false);
             this.tab6.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -589,5 +758,17 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TabPage tab7;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
     }
 }

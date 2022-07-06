@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjectTraSuaN
 {
-    public partial class Form3 : Form
+    public partial class Register : Form
     {
-        public Form3()
+        public Register()
         {
             InitializeComponent();
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
