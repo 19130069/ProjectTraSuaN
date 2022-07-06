@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectTraSuaN
 {
-    public partial class Form2 : Form
+    public partial class Home : Form
     {
-        public Form2()
+        public Home()
         {
             InitializeComponent();
         }
