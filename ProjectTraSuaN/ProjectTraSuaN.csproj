@@ -116,6 +116,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Phone-icon.png" />
+    <None Include="Resources\email-icon.png" />
+    <None Include="Resources\Communication-email-blue-icon.png" />
     <Content Include="Resources\Images\choco-ngucoc-kem.png" />
     <Content Include="Resources\Images\dau_tam_kem_pho_mai.jpg" />
     <Content Include="Resources\Images\ezgif.com-gif-maker-11.jpg" />
