@@ -100,11 +100,12 @@
             this.txtPass.IconLeft = global::ProjectTraSuaN.Properties.Resources.preferences_desktop_user_password_icon;
             this.txtPass.Location = new System.Drawing.Point(106, 196);
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '\0';
+            this.txtPass.PasswordChar = '●';
             this.txtPass.PlaceholderText = "Enter Your Password";
             this.txtPass.SelectedText = "";
             this.txtPass.Size = new System.Drawing.Size(594, 36);
             this.txtPass.TabIndex = 15;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // txtUser
             // 
@@ -142,11 +143,12 @@
             this.guna2TextBox1.IconLeft = global::ProjectTraSuaN.Properties.Resources.preferences_desktop_user_password_icon;
             this.guna2TextBox1.Location = new System.Drawing.Point(106, 295);
             this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PasswordChar = '●';
             this.guna2TextBox1.PlaceholderText = "Enter Your Password";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(594, 36);
             this.guna2TextBox1.TabIndex = 17;
+            this.guna2TextBox1.UseSystemPasswordChar = true;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // label4

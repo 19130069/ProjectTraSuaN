@@ -116,11 +116,12 @@
             this.txtPass.IconLeft = global::ProjectTraSuaN.Properties.Resources.preferences_desktop_user_password_icon;
             this.txtPass.Location = new System.Drawing.Point(94, 223);
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '\0';
+            this.txtPass.PasswordChar = '●';
             this.txtPass.PlaceholderText = "Enter Your Password";
             this.txtPass.SelectedText = "";
             this.txtPass.Size = new System.Drawing.Size(594, 36);
             this.txtPass.TabIndex = 8;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 

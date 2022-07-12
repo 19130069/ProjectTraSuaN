@@ -35,5 +35,10 @@ namespace ProjectTraSuaN
         {
 
         }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
